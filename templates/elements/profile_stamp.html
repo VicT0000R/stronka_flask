@@ -1,0 +1,11 @@
+<div class="profile">
+    <div id="user_photo">
+        <img src="{{ url_for('static', filename='images/user.svg') }}" height="160px" alt="Example SVG">
+    </div>
+    <div class="user_name">
+        {{session["name"]}} {{session["surname"]}}
+        <span id="status">
+            <span id="dot"></span><span class="act">Aktywny</span>
+        </span>
+    </div>
+</div>
